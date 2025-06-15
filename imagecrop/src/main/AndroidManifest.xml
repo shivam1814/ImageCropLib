@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shivam.imagecrop">
+
+    <application>
+
+        <!-- Your wrapper activity -->
+        <activity
+            android:name=".ImageCropperActivity"
+            android:exported="false" />
+
+        <!-- Required for uCrop to work internally -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    </application>
+
+</manifest>
